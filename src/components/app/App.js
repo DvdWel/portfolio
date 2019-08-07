@@ -8,11 +8,9 @@ import Projects from './pages/projects';
 function App() {
   return (
     <Router>
-      <div>
-        <Route exact path="/" component={Homepage} />
-        <Route path="/about/" component={About} />
-        <Route path="/projects/" component={Projects} />
-      </div>
+      <Route exact path="/" component={Homepage} />
+      <Route path="/about/" component={About} />
+      <Route path="/projects/" component={Projects} />
     </Router>
   );
 }
