@@ -1,0 +1,78 @@
+@import './colors.scss';
+
+@mixin default($size, $family: Merriweather, $lineHeight: normal, $spacing: normal) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: $lineHeight;
+    letter-spacing: $spacing;
+}
+
+@mixin Heading-Extra-Large {
+    @include default(144px);
+}
+
+@mixin Project-counter {
+    @include default(120px);
+}
+
+@mixin Heading-Large {
+    @include default(88px);
+}
+
+@mixin MOB-Heading-Extra-Large {
+    @include default(68.5px);
+}
+
+@mixin Content-Large {
+    @include default(44px);
+}
+
+@mixin MOB-Heading-Large {
+    @include default(32px);
+}
+
+@mixin Heading-Medium {
+    @include default(28px);
+}
+
+@mixin Heading-Small {
+    @include Heading-Medium();
+}
+
+@mixin Heading-Medium {
+    @include default(28px, OpenSans);
+}
+
+@mixin MOB-Heading-Medium {
+    @include default(24px);
+}
+
+@mixin Content-Small {
+    @include default(22px, OpenSans, 1.45);
+}
+
+@mixin MOB-Content-Medium {
+    @include default(20px, OpenSans, 1.5);
+    color: $white;
+}
+
+@mixin MOB-Heading-Extra-Small {
+    @include default(18px, $spacing: 1px);
+    text-align: right;
+}
+
+@mixin menu {
+    @include MOB-Heading-Extra-Small();
+}
+
+@mixin MOB-Content-Small {
+    @include default(18px, OpenSans, 2);
+    color: $white;
+}
+
+@mixin MOB-Heading-Small {
+    @include default(16px);
+}
