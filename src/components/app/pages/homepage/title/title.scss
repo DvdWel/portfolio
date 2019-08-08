@@ -1,9 +1,18 @@
+@import './../../../shared/index.scss';
+
+.titleFront {
+    display: flex;
+    margin-top: -134px;
+    margin-left: 64px;
+}
+
 .title{
-    font-size: 144px;
+    @include Heading-Extra-Large();
 
     &_dark{
         color: #dde4ad;
         margin: 0;
+        letter-spacing: 32px;
     }
 
     &_light{

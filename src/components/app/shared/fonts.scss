@@ -1,4 +1,6 @@
 @import './colors.scss';
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 @mixin default($size, $family: Merriweather, $lineHeight: normal, $spacing: normal) {
     font-family: $family;

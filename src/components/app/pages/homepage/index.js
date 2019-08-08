@@ -5,8 +5,8 @@ import Title from './title'
 class Homepage extends React.Component {
     render() {
         return (
-            <div className='wrapper'>
-                <Title />
+            <div id="vantajs" className='wrapper'>
+                <Title className='homepage_title'/>
             </div>
         );
     }

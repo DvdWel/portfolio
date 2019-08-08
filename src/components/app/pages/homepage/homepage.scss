@@ -1,5 +1,15 @@
+@import './../../shared/index.scss';
+
 .wrapper{
     width: 100vw;
     height: 100vh;
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: multiply;
+  background-image: linear-gradient(to bottom, $sapphire, $sapphire);
+}
+
+.homepage_title {
+    margin: auto;
 }

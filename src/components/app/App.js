@@ -7,11 +7,13 @@ import Projects from './pages/projects';
 
 function App() {
   return (
-    <Router>
-      <Route exact path="/" component={Homepage} />
-      <Route path="/about/" component={About} />
-      <Route path="/projects/" component={Projects} />
-    </Router>
+    <div className='pageWrapper'>
+      <Router>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/about/" component={About} />
+        <Route path="/projects/" component={Projects} />
+      </Router>
+    </div>
   );
 }
 
